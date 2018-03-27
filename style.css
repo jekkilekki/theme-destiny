@@ -3,7 +3,7 @@ Theme Name: Destiny
 Theme URI: http://underscores.me/
 Author: Aaron Snowberger
 Author URI: https://aaron.kr
-Description: A simple and minimalistic blog theme inspired by Bungi Software\'s Destiny 2 designs.
+Description: A simple and minimalistic blog theme inspired by Bungie Software\'s Destiny 2 designs.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -19,6 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif|Lato|Montserrat|Nunito|Nunito+Sans|PT+Sans|PT+Serif");
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -357,13 +359,59 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-family: "Roboto", sans-serif;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  line-height: 1.7; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px; }
+
+h1:before {
+  width: 100px;
+  content: "";
+  display: block;
+  height: 8px;
+  background: black; }
+
+h1:after {
+  width: 200px;
+  content: "";
+  display: block;
+  height: 2px;
+  background: black;
+  margin-bottom: 2rem; }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 2rem; }
+
+h2.centered {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 220px;
+  text-align: center;
+  margin: 0 auto; }
+
+h4,
+.label {
+  line-height: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -379,7 +427,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Roboto Mono", "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -447,6 +495,27 @@ dt {
 
 dd {
   margin: 0 1.5em 1.5em; }
+
+ul {
+  list-style: none;
+  margin: 1.5rem 2rem; }
+
+li {
+  /* https://codepen.io/mtclmn/pen/OPQmbx */
+  position: relative; }
+
+li:after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: black;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0.5rem;
+  left: -1rem; }
 
 img {
   height: auto;

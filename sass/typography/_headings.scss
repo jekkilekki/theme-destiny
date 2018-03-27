@@ -1,3 +1,65 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
+
+h1 {
+	font-size: 3rem;
+	line-height: 4.4rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+h1:before {
+	width: 100px;
+	content: "";
+	display: block;
+	height: 8px;
+	background: rgba(0, 0, 0, 1);
+}
+
+h1:after {
+	width: 200px;
+	content: "";
+	display: block;
+	height: 2px;
+	background: rgba(0, 0, 0, 1);
+	margin-bottom: 2rem;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 2rem;
+}
+h2.centered {
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	width: 220px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h3 {
+
+}
+
+h4,
+.label {
+	line-height: 2rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}

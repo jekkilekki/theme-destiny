@@ -517,6 +517,12 @@ ul li:before {
   top: 0.5rem;
   left: -1rem; }
 
+ul li:nth-child(n+3):before {
+  background: rgba(0, 0, 0, 0.5); }
+
+ul li:nth-child(n+2):before {
+  background: black; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */

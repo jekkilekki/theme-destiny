@@ -504,7 +504,7 @@ li {
   /* https://codepen.io/mtclmn/pen/OPQmbx */
   position: relative; }
 
-li:after {
+ul li:before {
   content: "";
   height: 6px;
   width: 6px;
